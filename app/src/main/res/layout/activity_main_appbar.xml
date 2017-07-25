@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.dbcent91.materialdesign.MainActivity">
+
+
+
+
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/app_Drawer_navigation_fragment"
+            android:layout_width="@dimen/navDrawerWidth"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer_fragemnt"
+            android:name="com.example.dbcent91.materialdesign.NavigationDrawerFragemnt"
+            tools:layout="@layout/fragment_navigation_drawer_fragemnt"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
